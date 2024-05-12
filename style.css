@@ -1,0 +1,38 @@
+body, html {
+  height: 100%; /* Задаем полную высоту для body и html */
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Горизонтальное центрирование */
+  align-items: center; /* Вертикальное центрирование */
+  background: #f4f4f4; /* Фон страницы для визуального различия */
+}
+
+.authentication-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  padding: 20px;
+  background: white; /* Фон формы */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Тень для формы */
+}
+
+.authentication-frame form {
+  display: flex;
+  flex-direction: column; /* Устанавливает направление элементов в столбец */
+  align-items: flex-start; /* Выравнивание элементов по левому краю */
+  margin-bottom: 10px; /* Добавляет отступ между полями */
+}
+
+input {
+  width: 100%; /* Позволяет input занимать всю ширину родительского div */
+}
+.authentication-buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center; /* Центрирует кнопки горизонтально */
+  flex-direction: row; /* Должно располагать кнопки в одну линию */
+}
+.authentication-buttons button{
+  width: 80px;
+}
