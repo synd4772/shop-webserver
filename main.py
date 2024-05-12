@@ -92,7 +92,11 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
         self.wfile.write(f.read())
       pass
     except FileNotFoundError:
-      self.send_error(404, "File not found")
+      self.send_response(404)
+      with open('./items/errorimage.png', 'rb') as f:
+        self.send_header('Content-type', 'image/png')
+        self.end_headers()
+        self.wfile.write(f.read())
 
   def handle_js_request(self):
     print("\nJS HANDLER REQUEST\n")

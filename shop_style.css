@@ -10,9 +10,10 @@ body{
 
 .product-card{
   width: 400px;
-  background-color: #a39eba;
+  background-color: #333239;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  color: rgb(227, 242, 255);
 }
 .product-image{
   background-color: #482a2a;
@@ -20,6 +21,10 @@ body{
   width: 200px;
   height: 200px;
   justify-content: center;
+  
+}
+.product-card img{
+  object-fit: cover;
 }
 .product-card h1{
   font-size: 40px;
