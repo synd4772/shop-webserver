@@ -1,6 +1,6 @@
 body{
   margin: 0;
-  background-color: #d4d1e2;
+  background-color: #fffcf5;
 }
 
 #product-cards-container{
@@ -10,10 +10,10 @@ body{
 
 .product-card{
   width: 400px;
-  background-color: #333239;
+  background-color: #202020;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  color: rgb(227, 242, 255);
+  color: rgb(255, 255, 255);
 }
 .product-image{
   background-color: #482a2a;

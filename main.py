@@ -92,7 +92,7 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
         self.wfile.write(f.read())
       pass
     except FileNotFoundError:
-      self.send_response(404)
+      self.send_response(200)
       with open('./items/errorimage.png', 'rb') as f:
         self.send_header('Content-type', 'image/png')
         self.end_headers()
